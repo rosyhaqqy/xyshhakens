@@ -17,4 +17,7 @@ echo '                     604800 )       ; Negative Cache TTL' >> /etc/bind/jar
 echo ';' BIND data file for local loopback interface >> /etc/bind/jarkom/arjuna.E14.com
 echo '@       IN      NS      arjuna.E14.com.' >> /etc/bind/jarkom/arjuna.E14.com
 echo '@       IN      A       192.213.2.2' >> /etc/bind/jarkom/arjuna.E14.com
+echo 'www     IN      CNAME   arjuna.E14.com.' >> /etc/bind/jarkom/arjuna.E14.com
 service bind9 restart
+
+## add nameserver in 2 client masukkan nameserver di pertama
